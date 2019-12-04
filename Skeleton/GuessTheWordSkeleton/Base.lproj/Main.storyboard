@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -26,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="164" y="659"/>
+            <point key="canvasLocation" x="164" y="658.92053973013503"/>
         </scene>
         <!--History-->
         <scene sceneID="zr2-VW-saT">
@@ -67,7 +67,21 @@
                             <outlet property="delegate" destination="xDr-1U-rbu" id="yfY-iT-6wg"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="History" id="SD5-rt-vX4"/>
+                    <navigationItem key="navigationItem" title="History" id="SD5-rt-vX4">
+                        <barButtonItem key="leftBarButtonItem" title="Done" style="plain" id="dKj-6Y-8QB">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8IY-Zu-vhj">
+                                <rect key="frame" x="16" y="7" width="83" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="dismissHistory:" destination="xDr-1U-rbu" eventType="touchUpInside" id="Fmp-C9-ybs"/>
+                                </connections>
+                            </button>
+                            <connections>
+                                <action selector="dismissHistory:" destination="xDr-1U-rbu" id="1qL-Y6-ZRC"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qqg-qW-8dn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

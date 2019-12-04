@@ -20,7 +20,7 @@ class HistoryTableViewController: UITableViewController {
     
     /* Reloads table data with new data from ViewController's prepareForSegue */
     override func viewWillAppear(_ animated: Bool) {
-        //TODO: Reload tableView data
+        tableView.reloadData()
     }
     
     /* Dismisses this modal to go back to ViewController */
@@ -35,7 +35,8 @@ class HistoryTableViewController: UITableViewController {
     
     /* Number of cells correlates to number of correct answers (length of words array) */
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0 //TODO: Set to length of array aboive
+        //TODO: Set to length of array aboive
+        return 0
     }
     
     /* Populates Default cell w/ subtitle with info from arrays above. Called once for each cell necessary as determined by numberOfRowsInSection */
