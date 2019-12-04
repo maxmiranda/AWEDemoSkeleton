@@ -1,8 +1,8 @@
 # Guess The Word Skeleton
 
 Todo:
-* Implement all missing methods marked with //TODO
 * Complete storyboard
+* Implement all missing methods marked with //TODO
 * Initalize CocoaPods (`pod init`)
 * Install ` pod 'ConfettiView'`
 * Implement ConfettiView
